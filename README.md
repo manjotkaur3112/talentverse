@@ -1,7 +1,5 @@
 # TalentVerse: AI Career & Skills Intelligence
 
-CSB312 CA3 Mini Project 2 (Option 9, TalentVerse).
-
 A resume goes in. The AI extracts a structured skills and experience profile, the server validates it,
 you review and confirm it, and it is saved to a database. That saved profile then powers a career workspace
 with eight tools. Every score, percentage and chart is computed from saved database records.
