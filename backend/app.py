@@ -26,6 +26,20 @@ def _database_url():
 
 def create_app(test_config=None):
     app = Flask(__name__)
+    from flask_cors import CORS
+
+    CORS(
+        app,
+        resources={
+            r"/api/*": {
+                "origins": [
+                    "https://acr-talentverse.vercel.app"
+                ]
+            }
+        },
+        allow_headers=["Content-Type", "X-Owner-Id"],
+        methods=["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
+    )
     app.config.update(
         SQLALCHEMY_DATABASE_URI=_database_url(),
         MAX_CONTENT_LENGTH=5 * 1024 * 1024,
