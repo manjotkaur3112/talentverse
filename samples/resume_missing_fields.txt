@@ -1,0 +1,5 @@
+Rohan Mehta
+Final-year student. I like building web apps.
+Skills: HTML, CSS, JavaScript, a bit of Python
+Worked at a local startup as a frontend developer for some months.
+Built a portfolio website and a weather app.

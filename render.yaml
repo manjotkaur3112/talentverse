@@ -1,0 +1,27 @@
+# Render Blueprint: backend + free Postgres. Deploy the frontend separately on Vercel/Netlify.
+databases:
+  - name: talentverse-db
+    plan: free
+
+services:
+  - type: web
+    name: talentverse-api
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2 --timeout 120
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
+      - key: DATABASE_URL
+        fromDatabase:
+          name: talentverse-db
+          property: connectionString
+      - key: AI_PROVIDER
+        value: gemini
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: FRONTEND_ORIGIN
+        sync: false

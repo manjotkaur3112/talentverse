@@ -1,0 +1,22 @@
+Manjot Kaur
+manjot.kaur@example.com | github.com/manjotkaur
+
+SUMMARY
+Second-year B.Tech CSE student interested in full-stack development and AI integration.
+
+EDUCATION
+B.Tech Computer Science and Engineering, Lovely Professional University, expected 2028
+
+SKILLS
+Languages: Python, JavaScript, SQL
+Frameworks: React, Flask, Node.js
+Tools: Git, Docker (beginner), PostgreSQL
+
+EXPERIENCE
+Web Development Intern, Nimbus Labs, Jun 2025 - Aug 2025
+- Built a REST API with Flask and PostgreSQL used by 3 internal tools
+- Created React dashboards for tracking weekly tasks
+
+PROJECTS
+Budget Buddy - Expense tracker using React, Flask and SQLite with receipt upload
+Study Planner - Node.js and MongoDB app that turns syllabus text into a weekly plan

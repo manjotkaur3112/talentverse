@@ -1,0 +1,7 @@
+Full Stack Developer Intern, Acme Cloud
+
+We are looking for an intern to help build our customer dashboard.
+
+Requirements: React, JavaScript, REST APIs, SQL, Git, Docker.
+Nice to have: Python, Flask, AWS, TypeScript.
+Responsibilities: build UI components, write API endpoints, fix bugs, and join code reviews.
